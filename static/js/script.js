@@ -40,8 +40,8 @@ async function handleInput() {
     const scores = result.scores;
 
     // Normalize the scores
-    const minScore = 0.15;
-    const maxScore = 0.18;
+    const minScore = 0.89;
+    const maxScore = 0.95;
     const normalizedScores = {};
     for (const speaker in scores) {
       const rawScore = scores[speaker];

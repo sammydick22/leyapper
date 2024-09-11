@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LeBronGPT - Who's the LeBroniest?</title>
+    <link rel="stylesheet" type="text/css" href="/static/styles/styles.css">
+    <script src="static/js/script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>LeYapper</h1>
+      <p>
+        Upload an MP3 file of a conversation to find out who is the LeBroniest.
+      </p>
+
+      <div class="file-upload">
+        <label for="file-upload">Choose File</label>
+        <input id="file-upload" type="file" accept=".mp3" />
+        <span id="file-chosen">No file chosen</span>
+      </div>
+
+      <button onclick="handleInput()">Analyze Conversation</button>
+
+      <div id="results">
+        <h2>Results</h2>
+        <div id="analysis-result"></div>
+        <div id="speaker-scores-container" class="score-container"></div>
+      </div>
+
+      <div id="testimonials" class="testimonials-container">
+        <h2>What Our Users Say</h2>
+        <div class="testimonial">
+          <p>"This tool is amazing! It really helped me understand our conversations better!"</p>
+          <span>- Alex</span>
+        </div>
+        <div class="testimonial">
+          <p>"I never knew who dominated our discussions until I tried this. Highly recommend!"</p>
+          <span>- Jamie</span>
+        </div>
+        <div class="testimonial">
+          <p>"A fun way to analyze conversations. The results were spot on!"</p>
+          <span>- Taylor</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
